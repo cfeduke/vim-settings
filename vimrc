@@ -168,3 +168,5 @@ let g:clang_complete_auto = 0
 " show clang errors in the quickfix window
 let g:clang_complete_copen = 1
 
+" VimClojure
+au Bufenter,Bufnewfile *.clj setl complete+=k~/.clj_completions

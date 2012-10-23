@@ -24,7 +24,8 @@ git_bundles = [
 	"git://github.com/altercation/vim-colors-solarized.git",
 	"git://github.com/Rip-Rip/clang_complete.git",
 	"git://github.com/ervandew/supertab.git",
-	"git://github.com/cfeduke/snipmate.vim.git"
+	"git://github.com/cfeduke/snipmate.vim.git",
+	"git://github.com/derekwyatt/vim-scala.git"
 ]
 
 vim_org_scripts = [
@@ -32,7 +33,7 @@ vim_org_scripts = [
   ["gist",          "15452", "plugin"],
   ["jquery",        "12276", "syntax"],
   ["dbext",         "13339",  "zip"],
-  ["bufexplorer",   "14208",   "zip"],
+#  ["bufexplorer",   "14208",   "zip"],
   ["fuzzyfinder",   "13961",   "zip"],
   ["l9",  					"13948",   "zip"],
 	["nerdcommenter", "14455",   "zip"],
