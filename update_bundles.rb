@@ -25,7 +25,8 @@ git_bundles = [
 	"git://github.com/Rip-Rip/clang_complete.git",
 	"git://github.com/ervandew/supertab.git",
 	"git://github.com/cfeduke/snipmate.vim.git",
-	"git://github.com/derekwyatt/vim-scala.git"
+	"git://github.com/derekwyatt/vim-scala.git",
+  "git://github.com/cfeduke/cfeduke.vim.git"
 ]
 
 vim_org_scripts = [
