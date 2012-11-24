@@ -1,13 +1,23 @@
-" Example Vim configuration.
+" Example Vim configuration
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
 set nocompatible                  " Must come first because it changes other options.
+filetype off
 
-silent! call pathogen#runtime_append_all_bundles()
-silent! call pathogen#helptags()
+let g:pathogen_disabled = []
+if !has('gui_running')
+  call add(g:pathogen_disabled, 'command-t')
+endif
 
-syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
+call pathogen#infect()
+silent! Helptags
+syntax on
+
+filetype plugin indent on
+
+set modelines=0
+
+"syntax enable                     " Turn on syntax highlighting.
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
@@ -27,9 +37,6 @@ set smartcase                     " But case-sensitive if expression contains a 
 set number                        " Show line numbers.
 set ruler                         " Show cursor position.
 
-set incsearch                     " Highlight matches as you type.
-set hlsearch                      " Highlight matches.
-
 set wrap                          " Turn on line wrapping.
 set scrolloff=3                   " Show 3 lines of context around the cursor.
 
@@ -47,9 +54,12 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 " UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
-"set expandtab                    " Use spaces instead of tabs
+set softtabstop=2
+set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
+set autoindent
+set relativenumber                " show line numbers relative to the current line
 " Useful status information at bottom of screen
  set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l/%L,%c-%v\ %)%P
 
@@ -170,3 +180,26 @@ let g:clang_complete_copen = 1
 
 " VimClojure
 au Bufenter,Bufnewfile *.clj setl complete+=k~/.clj_completions
+
+
+" omnicompletion
+set ofu=syntaxcomplete#Complete
+
+" by default enable the cursor crosshairs
+set cursorline! cursorcolumn!
+
+" searching
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
+nnoremap <tab> %
+vnoremap <tab> %
+
+" switch between relative and absolute line numbers
+nnoremap <C-n> :NumberToggle<cr>

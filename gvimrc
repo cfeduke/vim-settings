@@ -27,3 +27,6 @@ set antialias                     " MacVim: smooth fonts.
 
 set guioptions-=r                 " Don't show right scrollbar
 set lines=52 columns=120
+
+" for command-t
+":call pathogen#helptags()
