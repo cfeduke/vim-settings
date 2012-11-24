@@ -26,7 +26,8 @@ git_bundles = [
 	"git://github.com/ervandew/supertab.git",
 	"git://github.com/cfeduke/snipmate.vim.git",
 	"git://github.com/derekwyatt/vim-scala.git",
-  "git://github.com/cfeduke/cfeduke.vim.git"
+  "git://github.com/cfeduke/cfeduke.vim.git",
+  "git://github.com/jeffkreeftmeijer/vim-numbertoggle.git"
 ]
 
 vim_org_scripts = [

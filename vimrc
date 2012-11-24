@@ -1,4 +1,3 @@
-" Example Vim configuration
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
 set nocompatible                  " Must come first because it changes other options.
@@ -201,5 +200,3 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
-" switch between relative and absolute line numbers
-nnoremap <C-n> :NumberToggle<cr>
