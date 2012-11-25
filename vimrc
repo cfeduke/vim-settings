@@ -8,6 +8,7 @@ if !has('gui_running')
   call add(g:pathogen_disabled, 'command-t')
 endif
 
+let g:NumberToggleTrigger="<leader>ln"
 call pathogen#infect()
 silent! Helptags
 syntax on
@@ -58,7 +59,8 @@ set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
 set autoindent
-set relativenumber                " show line numbers relative to the current line
+" let the numbertoggle plugin handle this
+"set relativenumber                " show line numbers relative to the current line
 " Useful status information at bottom of screen
  set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l/%L,%c-%v\ %)%P
 
@@ -200,3 +202,52 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
+" gutter column
+set colorcolumn=120
+
+" remove arrow keys crutch
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+nnoremap j gj
+nnoremap k gk
+
+" disable the help key, can just use :help
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" allow ; to work just like : (no shift)
+nnoremap ; :
+
+" lose focus and sove
+"au FocusLost * :wa
+
+" strip all trailing whitespace
+nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+
+" ack
+nnoremap <leader>a :Ack
+
+" select lines of text just pasted
+nnoremap <leader>v V`]
+
+" since no words contain "jj" have "jj" act as ESC
+inoremap jj <ESC>
+
+" open a new vertical split and change focus to it
+nnoremap <leader>w <C-w>v<C-w>l
+" navigate splits
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" yankring shortcuts
+nnoremap <silent> <F3> :YRShow<cr>
+inoremap <silent> <F3> <ESC>:YRShow<cr>

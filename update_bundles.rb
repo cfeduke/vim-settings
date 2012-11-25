@@ -19,7 +19,6 @@ git_bundles = [
   "git://github.com/tsaleh/vim-align.git",
   "git://github.com/tsaleh/vim-shoulda.git",
   "git://github.com/tsaleh/vim-supertab.git",
-  "git://github.com/tsaleh/vim-tcomment.git",
   "git://github.com/vim-ruby/vim-ruby.git",
 	"git://github.com/altercation/vim-colors-solarized.git",
 	"git://github.com/Rip-Rip/clang_complete.git",
@@ -27,7 +26,10 @@ git_bundles = [
 	"git://github.com/cfeduke/snipmate.vim.git",
 	"git://github.com/derekwyatt/vim-scala.git",
   "git://github.com/cfeduke/cfeduke.vim.git",
-  "git://github.com/jeffkreeftmeijer/vim-numbertoggle.git"
+  "git://github.com/jeffkreeftmeijer/vim-numbertoggle.git",
+  "git://github.com/scrooloose/nerdcommenter.git",
+  "git://github.com/mileszs/ack.vim.git",
+  "git://github.com/vim-scripts/YankRing.vim.git"
 ]
 
 vim_org_scripts = [
@@ -35,7 +37,6 @@ vim_org_scripts = [
   ["gist",          "15452", "plugin"],
   ["jquery",        "12276", "syntax"],
   ["dbext",         "13339",  "zip"],
-#  ["bufexplorer",   "14208",   "zip"],
   ["fuzzyfinder",   "13961",   "zip"],
   ["l9",  					"13948",   "zip"],
 	["nerdcommenter", "14455",   "zip"],
