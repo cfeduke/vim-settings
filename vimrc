@@ -120,7 +120,7 @@ map <leader>nf :NERDTreeFind<cr>
 map <F2> :NERDTreeToggle<CR>
 "map <Leader>n :NERDTreeToggle<CR>
 " don't open nerdtree on directory opens
-let NERDTreeHijackNetrw=0 
+let NERDTreeHijackNetrw=1 
 
 nmap <silent> <leader>n :silent :nohlsearch<CR>
 
@@ -160,7 +160,7 @@ nmap <leader>f :FufFile<CR>
 nmap <leader>o :FufCoverageFile<CR>
 nmap <leader>d :FufFileWithCurrentBufferDir<CR>
 nmap <leader>b :FufBuffer<CR>
-nmap <leader>t :FufTaggedFile<CR>
+"nmap <leader>t :FufTaggedFile<CR>
 noremap <leader>j :FufLine<CR>
 
 hi CursorLine   cterm=NONE ctermbg=black guibg=#e4e4e4
@@ -251,3 +251,11 @@ nnoremap <C-l> <C-w>l
 " yankring shortcuts
 nnoremap <silent> <F3> :YRShow<cr>
 inoremap <silent> <F3> <ESC>:YRShow<cr>
+
+" editing files in the current file's directory
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>ew :e %%
+map <leader>es :sp %%
+map <leader>ev :vsp %%
+map <leader>et :tabe %%
+

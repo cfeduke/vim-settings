@@ -29,7 +29,8 @@ git_bundles = [
   "git://github.com/jeffkreeftmeijer/vim-numbertoggle.git",
   "git://github.com/scrooloose/nerdcommenter.git",
   "git://github.com/mileszs/ack.vim.git",
-  "git://github.com/vim-scripts/YankRing.vim.git"
+  "git://github.com/vim-scripts/YankRing.vim.git",
+  "git://github.com/claco/jasmine.vim.git"
 ]
 
 vim_org_scripts = [
