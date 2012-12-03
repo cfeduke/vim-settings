@@ -1,52 +1,34 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
-  #"git://github.com/astashov/vim-ruby-debugger.git",
   "git://github.com/msanders/snipmate.vim.git",
-  #"git://github.com/scrooloose/nerdtree.git",
 	#use wycats modified janus nerdtree
 	"git://github.com/wycats/nerdtree.git",  
-  "git://github.com/timcharper/textile.vim.git",
-  "git://github.com/tpope/vim-cucumber.git",
   "git://github.com/tpope/vim-fugitive.git",
-  "git://github.com/tpope/vim-git.git",
-  "git://github.com/tpope/vim-haml.git",
-  "git://github.com/tpope/vim-markdown.git",
   "git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-repeat.git",
   "git://github.com/tpope/vim-surround.git",
-  "git://github.com/tpope/vim-vividchalk.git",
-  "git://github.com/tsaleh/vim-align.git",
-  "git://github.com/tsaleh/vim-shoulda.git",
-  "git://github.com/tsaleh/vim-supertab.git",
   "git://github.com/vim-ruby/vim-ruby.git",
 	"git://github.com/altercation/vim-colors-solarized.git",
-	"git://github.com/Rip-Rip/clang_complete.git",
-	"git://github.com/ervandew/supertab.git",
 	"git://github.com/cfeduke/snipmate.vim.git",
-	"git://github.com/derekwyatt/vim-scala.git",
-  "git://github.com/cfeduke/cfeduke.vim.git",
   "git://github.com/jeffkreeftmeijer/vim-numbertoggle.git",
   "git://github.com/scrooloose/nerdcommenter.git",
   "git://github.com/mileszs/ack.vim.git",
   "git://github.com/vim-scripts/YankRing.vim.git",
-  "git://github.com/claco/jasmine.vim.git"
+  "git://github.com/claco/jasmine.vim.git",
+  "git://github.com/wincent/Command-T.git",
+  "git://github.com/sjl/gundo.vim.git",
+  "git://github.com/godlygeek/tabular.git",
 ]
 
 vim_org_scripts = [
-  ["IndexedSearch", "7062",  "plugin"],
   ["gist",          "15452", "plugin"],
   ["jquery",        "12276", "syntax"],
-  ["dbext",         "13339",  "zip"],
   ["fuzzyfinder",   "13961",   "zip"],
   ["l9",  					"13948",   "zip"],
-	["nerdcommenter", "14455",   "zip"],
-  ["wikipedia",  	  "7538",   "tar"],
-	["VimClojure",    "17125",   "zip"]
 ]
 
 other_scripts = [
-  ["thrift", "http://svn.apache.org/repos/asf/thrift/trunk/contrib/thrift.vim",  "syntax"],
 ]
 
 
