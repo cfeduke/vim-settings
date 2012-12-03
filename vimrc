@@ -264,3 +264,12 @@ map <leader>et :tabe %%
 
 " I like numbers when I enter a file in command mode
 set number
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
+let mapleader = ","
+nmap <leader>vrc :tabedit $MYVIMRC<CR>
+" undo trees
+nnoremap <F4> :GundoToggle<CR>
