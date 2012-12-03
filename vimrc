@@ -259,3 +259,8 @@ map <leader>es :sp %%
 map <leader>ev :vsp %%
 map <leader>et :tabe %%
 
+" map </ to automatically close tags
+:iabbrev </ </<C-X><C-O>
+
+" I like numbers when I enter a file in command mode
+set number
