@@ -232,6 +232,7 @@ nnoremap ; :
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
 nnoremap <leader>a :Ack
 
 " select lines of text just pasted
