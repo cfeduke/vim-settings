@@ -273,3 +273,14 @@ let mapleader = ","
 nmap <leader>vrc :tabedit $MYVIMRC<CR>
 " undo trees
 nnoremap <F4> :GundoToggle<CR>
+
+" rspec
+" Cmd-Shift-R for RSpec
+nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
+" Cmd-Shift-L for RSpec Current Line
+nmap <silent> <D-L> :call RunRspecCurrentLineConque()<CR>
+" ,Cmd-R for Last conque command
+nmap <silent> <leader><D-R> :call RunLastConqueCommand()<CR>
+
+" textmate like CMD+L inserts =>
+inoremap <C-l>  => 
