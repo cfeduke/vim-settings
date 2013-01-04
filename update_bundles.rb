@@ -20,9 +20,8 @@ git_bundles = [
   "git://github.com/wincent/Command-T.git",
   "git://github.com/sjl/gundo.vim.git",
   "git://github.com/godlygeek/tabular.git",
-  "git://github.com/rson/vim-conque.git",
-  "git://github.com/skwp/vim-ruby-conque.git",
   "git://github.com/vim-scripts/vim-creole.git",
+  "git://github.com/sebastiangeiger/sweet-rspec-vim.git",
 ]
 
 vim_org_scripts = [
