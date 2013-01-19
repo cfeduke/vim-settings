@@ -294,3 +294,6 @@ map <M-D-r> :SweetVimRspecRunPrevious<CR>
 imap <M-D-r> <ESC>:SweetVimRspecRunPrevious<CR>
 "highlight RSpecFailed guibg=#671d1a
 "highlight RSpecPending guibg=#54521a
+
+" rabl syntax
+au BufRead,BufNewFile *.rabl setf ruby
