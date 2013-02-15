@@ -21,6 +21,8 @@ git_bundles = [
   "git://github.com/sjl/gundo.vim.git",
   "git://github.com/godlygeek/tabular.git",
   "git://github.com/Lokaltog/vim-easymotion.git",
+  "git://github.com/vim-scripts/vim-creole.git",
+  "git://github.com/sebastiangeiger/sweet-rspec-vim.git",
 ]
 
 vim_org_scripts = [

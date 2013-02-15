@@ -274,3 +274,27 @@ let mapleader = ","
 nmap <leader>vrc :tabedit $MYVIMRC<CR>
 " undo trees
 nnoremap <F4> :GundoToggle<CR>
+
+for f in split(glob('~/.vim/scripts/*.vim'), '\n')
+  exe 'source' f
+endfor
+
+" textmate like CMD+L inserts =>
+inoremap <C-l>  => 
+
+" rspec
+if has("gui_running")
+  set macmeta
+endif
+let $SWEET_VIM_RSPEC_SHOW_PASSING="false"
+map <D-r> :SweetVimRspecRunFile<CR> "(CMD-r) or (Apple-r)
+imap <D-r> <ESC>:SweetVimRspecRunFile<CR> "(CMD-r) or (Apple-r)
+map <D-R> :SweetVimRspecRunFocused<CR> "(SHIFT-CMD-r)
+imap <D-R> <ESC>:SweetVimRspecRunFocused<CR> "(SHIFT-CMD-r)
+map <M-D-r> :SweetVimRspecRunPrevious<CR>
+imap <M-D-r> <ESC>:SweetVimRspecRunPrevious<CR>
+"highlight RSpecFailed guibg=#671d1a
+"highlight RSpecPending guibg=#54521a
+
+" rabl syntax
+au BufRead,BufNewFile *.rabl setf ruby
