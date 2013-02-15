@@ -20,6 +20,7 @@ git_bundles = [
   "git://github.com/wincent/Command-T.git",
   "git://github.com/sjl/gundo.vim.git",
   "git://github.com/godlygeek/tabular.git",
+  "git://github.com/Lokaltog/vim-easymotion.git",
 ]
 
 vim_org_scripts = [
