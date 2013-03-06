@@ -288,11 +288,9 @@ inoremap <C-l>  =>
 " powerline
 " sudo easy_install install pip
 " pip install --user git+git://github.com/Lokaltog/powerline
-" source /Users/cfeduke/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
-" 
 set rtp+=/Users/cfeduke/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
 
-if has("gui_running")
+if has('gui_running')
   set macmeta
   set guifont=Menlo\ Regular\ for\ Powerline:h12
 endif

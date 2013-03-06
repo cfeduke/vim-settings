@@ -23,6 +23,7 @@ git_bundles = [
   "git://github.com/Lokaltog/vim-easymotion.git",
   "git://github.com/vim-scripts/vim-creole.git",
   "git://github.com/sebastiangeiger/sweet-rspec-vim.git",
+  "git://github.com/Valloric/YouCompleteMe.git",
 ]
 
 vim_org_scripts = [
@@ -82,3 +83,7 @@ other_scripts.each do |name, url, script_type|
     %x(unzip -d #{name} #{local_file})
   end
 end
+
+# YouCompleteMe specific
+cd bundle/YouCompleteMe
+./install.sh
