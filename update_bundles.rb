@@ -25,6 +25,7 @@ git_bundles = [
   "git://github.com/sebastiangeiger/sweet-rspec-vim.git",
   "git://github.com/Valloric/YouCompleteMe.git",
   "git://github.com/vim-scripts/VimClojure.git",
+  "git://github.com/derekwyatt/vim-sbt.git",
 ]
 
 vim_org_scripts = [
