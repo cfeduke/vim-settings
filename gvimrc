@@ -2,7 +2,7 @@
 " Copy to ~/.gvimrc or ~/_gvimrc.
 
 " Font
-set guifont=Monaco:h12.00
+"set guifont=Monaco:h12.00
 
 "colorscheme xoria256
 let g:solarized_termtrans=0

@@ -75,12 +75,12 @@ if has('gui_running')
 	set background=light
 	set guioptions=egmrt
 else
-	set background=dark
+	set background=light
 endif
 
 "map leader to comma
 let mapleader = ","
-
+let maplocalleader = '"'
 " Tab mappings.
 "map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -248,6 +248,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+" rotate
+nnoremap <leader>rh <C-w>t<C-w>K
+nnoremap <leader>rv <C-w>t<C-w>H
 
 " yankring shortcuts
 nnoremap <silent> <F3> :YRShow<cr>
@@ -270,7 +273,6 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-let mapleader = ","
 nmap <leader>vrc :tabedit $MYVIMRC<CR>
 " undo trees
 nnoremap <F4> :GundoToggle<CR>
@@ -306,3 +308,7 @@ imap <M-D-r> <ESC>:SweetVimRspecRunPrevious<CR>
 
 " rabl syntax
 au BufRead,BufNewFile *.rabl setf ruby
+
+" clojure
+let g:vimclojure#HighlightBuiltins = 1
+let g:vimclojure#ParenRainbow = 1
