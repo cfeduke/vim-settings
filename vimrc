@@ -163,8 +163,8 @@ nmap <leader>b :FufBuffer<CR>
 "nmap <leader>t :FufTaggedFile<CR>
 noremap <leader>j :FufLine<CR>
 
-hi CursorLine   cterm=NONE ctermbg=black guibg=#e4e4e4
-hi CursorColumn cterm=NONE ctermbg=black guibg=#e4e4e4
+hi CursorLine   cterm=NONE ctermbg=254 guibg=#e4e4e4
+hi CursorColumn cterm=NONE ctermbg=254 guibg=#e4e4e4
 nnoremap <leader>c :set cursorline! cursorcolumn!<CR>
 
 " from http://zwiener.org/vimautocomplete.html
