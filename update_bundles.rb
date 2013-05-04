@@ -87,5 +87,5 @@ other_scripts.each do |name, url, script_type|
 end
 
 # YouCompleteMe specific
-cd bundle/YouCompleteMe
-./install.sh
+#cd bundle/YouCompleteMe
+#./install.sh
