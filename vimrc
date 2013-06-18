@@ -222,9 +222,6 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-" allow ; to work just like : (no shift)
-nnoremap ; :
-
 " lose focus and sove
 "au FocusLost * :wa
 
