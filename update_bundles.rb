@@ -1,30 +1,30 @@
 #!/usr/bin/env ruby
 
 git_bundles = [ 
-  "git://github.com/msanders/snipmate.vim.git",
+  #"git://github.com/msanders/snipmate.vim.git",
 	#use wycats modified janus nerdtree
 	"git://github.com/wycats/nerdtree.git",  
   "git://github.com/tpope/vim-fugitive.git",
-  "git://github.com/tpope/vim-rails.git",
+  #"git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-repeat.git",
   "git://github.com/tpope/vim-surround.git",
   "git://github.com/vim-ruby/vim-ruby.git",
 	"git://github.com/altercation/vim-colors-solarized.git",
-	"git://github.com/cfeduke/snipmate.vim.git",
-  "git://github.com/jeffkreeftmeijer/vim-numbertoggle.git",
+	#"git://github.com/cfeduke/snipmate.vim.git",
+  #"git://github.com/jeffkreeftmeijer/vim-numbertoggle.git",
   "git://github.com/scrooloose/nerdcommenter.git",
   "git://github.com/mileszs/ack.vim.git",
   "git://github.com/vim-scripts/YankRing.vim.git",
-  "git://github.com/claco/jasmine.vim.git",
+  #"git://github.com/claco/jasmine.vim.git",
 	"git://github.com/docunext/closetag.vim.git",
-  "git://github.com/wincent/Command-T.git",
+  #"git://github.com/wincent/Command-T.git",
   "git://github.com/sjl/gundo.vim.git",
   "git://github.com/godlygeek/tabular.git",
   "git://github.com/Lokaltog/vim-easymotion.git",
-  "git://github.com/vim-scripts/vim-creole.git",
-  "git://github.com/sebastiangeiger/sweet-rspec-vim.git",
+  #"git://github.com/vim-scripts/vim-creole.git",
+  #"git://github.com/sebastiangeiger/sweet-rspec-vim.git",
   "git://github.com/Valloric/YouCompleteMe.git",
-  "git://github.com/vim-scripts/VimClojure.git",
+  #"git://github.com/vim-scripts/VimClojure.git",
   "git://github.com/derekwyatt/vim-sbt.git",
   "git://github.com/elixir-lang/vim-elixir.git",
 ]
@@ -101,4 +101,15 @@ other_scripts.each do |name, url, script_type|
 end
 
 # YouCompleteMe specific
-%x(cd ./bundle/YouCompleteMe ; ./install.sh)
+%x(cd ./bundle/YouCompleteMe && ./install.sh)
+# scala syntax highlighting
+%x(scala_dir=~/Projects/scala-dist/tool-support/src/vim
+vim_bundle_dir=~/.vim/bundle/vim-scala
+if [[ -d $scala_dir ]]; then
+  if [[ ! -d $vim_bundle_dir ]]; then
+    mkdir $vim_bundle_dir
+  fi
+   cp -R $scala_dir $vim_bundle_dir
+   exit 0
+ fi
+ echo $scala_dir not found)

@@ -293,13 +293,13 @@ if has('gui_running')
   set macmeta
   set guifont=Menlo\ Regular\ for\ Powerline:h12
 endif
-let $SWEET_VIM_RSPEC_SHOW_PASSING="false"
-map <D-r> :SweetVimRspecRunFile<CR> "(CMD-r) or (Apple-r)
-imap <D-r> <ESC>:SweetVimRspecRunFile<CR> "(CMD-r) or (Apple-r)
-map <D-R> :SweetVimRspecRunFocused<CR> "(SHIFT-CMD-r)
-imap <D-R> <ESC>:SweetVimRspecRunFocused<CR> "(SHIFT-CMD-r)
-map <M-D-r> :SweetVimRspecRunPrevious<CR>
-imap <M-D-r> <ESC>:SweetVimRspecRunPrevious<CR>
+"let $SWEET_VIM_RSPEC_SHOW_PASSING="false"
+"map <D-r> :SweetVimRspecRunFile<CR> "(CMD-r) or (Apple-r)
+"imap <D-r> <ESC>:SweetVimRspecRunFile<CR> "(CMD-r) or (Apple-r)
+"map <D-R> :SweetVimRspecRunFocused<CR> "(SHIFT-CMD-r)
+"imap <D-R> <ESC>:SweetVimRspecRunFocused<CR> "(SHIFT-CMD-r)
+"map <M-D-r> :SweetVimRspecRunPrevious<CR>
+"imap <M-D-r> <ESC>:SweetVimRspecRunPrevious<CR>
 "highlight RSpecFailed guibg=#671d1a
 "highlight RSpecPending guibg=#54521a
 
@@ -307,5 +307,7 @@ imap <M-D-r> <ESC>:SweetVimRspecRunPrevious<CR>
 au BufRead,BufNewFile *.rabl setf ruby
 
 " clojure
-let g:vimclojure#HighlightBuiltins = 1
-let g:vimclojure#ParenRainbow = 1
+"let g:vimclojure#HighlightBuiltins = 1
+"let g:vimclojure#ParenRainbow = 1
+
+map <leader>ng :!nginx -s reload<CR>
