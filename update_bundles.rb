@@ -109,7 +109,7 @@ if [[ -d $scala_dir ]]; then
   if [[ ! -d $vim_bundle_dir ]]; then
     mkdir $vim_bundle_dir
   fi
-   cp -R $scala_dir $vim_bundle_dir
+   cp -R $scala_dir/ $vim_bundle_dir
    exit 0
  fi
  echo $scala_dir not found)
